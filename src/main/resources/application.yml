@@ -1,0 +1,36 @@
+#==========================================================
+#= Articoli Web Service - Versione Base
+#==========================================================
+
+server:
+  port: 5051
+  
+logging:
+  level:
+    it.ghismo: DEBUG
+    
+spring:
+  application:
+    name: ArticoliWebService
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+      
+  datasource:
+    initialization-mode: always
+    password: banana
+    platform: postgres
+    url: jdbc:postgresql://192.168.1.9:5433/AlphaShop
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
+
