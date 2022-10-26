@@ -1,5 +1,7 @@
 package it.ghismo.corso1.articoli.security;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -10,12 +12,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.User.UserBuilder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -35,11 +32,15 @@ public class SecurityConfiguration /*extends WebSecurityConfigurerAdapter*/ {
 												"/api/articoli/elimina/**"
 												};
 	
+	@Autowired
+	@Qualifier("customUserDetailsService")
+	private CustomUserDetailsService userDetailsService;
+	
 	
 	@Bean
 	public BCryptPasswordEncoder getPwdEncoder() { return new BCryptPasswordEncoder(); }
 	
-	
+	/*
 	@Bean
 	public UserDetailsService userDetailsService(BCryptPasswordEncoder bCryptPasswordEncoder) {
 		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
@@ -55,13 +56,23 @@ public class SecurityConfiguration /*extends WebSecurityConfigurerAdapter*/ {
 				.roles(roles)
 				.build();
 	}
+	*/
+	
+	/*
+	@Autowired
+	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+		auth
+		.userDetailsService(this.userDetailsService)
+		.passwordEncoder(getPwdEncoder());
+	}
+	*/
 	
 	
 	@Bean
-	public AuthenticationManager authManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailsService userDetailService) 
+	public AuthenticationManager authManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder/*, UserDetailsService userDetailService*/) 
 	  throws Exception {
 	    return http.getSharedObject(AuthenticationManagerBuilder.class)
-	      .userDetailsService(userDetailService)
+	      .userDetailsService(this.userDetailsService)
 	      .passwordEncoder(bCryptPasswordEncoder)
 	      .and()
 	      .build();
@@ -95,6 +106,5 @@ public class SecurityConfiguration /*extends WebSecurityConfigurerAdapter*/ {
 	    	.antMatchers("/css/**", "/js/**", "/img/**", "/lib/**", "/favicon.ico")
 	    	.antMatchers(HttpMethod.OPTIONS, "/**");
 	}
-	
 	
 }

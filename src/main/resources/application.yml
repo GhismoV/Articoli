@@ -9,6 +9,13 @@ logging:
   level:
     it.ghismo: DEBUG
     
+services:
+  gestuser:
+    url: http://localhost:8019/api/utenti/cerca/userid/
+    security-uid: Ghismo
+    security-pwd: banana
+    
+
 spring:
   application:
     name: ArticoliWebService
