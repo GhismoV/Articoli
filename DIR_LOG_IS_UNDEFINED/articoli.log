@@ -1,0 +1,63 @@
+2022-11-08 09:52:46.898 [main]  INFO i.g.c.a.t.C.SelectArtTest.logStarting - Starting SelectArtTest using Java 11.0.11 on PC-Giuseppe with PID 4640 (started by ghism_000 in C:\GitLocalRepo\Articoli)
+2022-11-08 09:52:46.901 [main] DEBUG i.g.c.a.t.C.SelectArtTest.logStarting - Running with Spring Boot v2.7.3, Spring v5.3.22
+2022-11-08 09:52:46.903 [main]  INFO i.g.c.a.t.C.SelectArtTest.logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+2022-11-08 09:52:49.654 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-08 09:52:49.817 [main]  INFO o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 142 ms. Found 4 JPA repository interfaces.
+2022-11-08 09:52:51.511 [main]  INFO o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-08 09:52:51.635 [main]  INFO org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-11-08 09:52:52.004 [main]  INFO o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-08 09:52:52.885 [main]  INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+2022-11-08 09:52:53.278 [main]  INFO com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+2022-11-08 09:52:53.312 [main]  INFO org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-08 09:52:54.667 [main]  INFO o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-08 09:52:54.685 [main]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 09:52:56.982 [main]  WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-08 09:52:57.815 [main]  INFO o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-11-08 09:52:57.980 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@19565b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ac7c683, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c1a0f82, org.springframework.security.web.header.HeaderWriterFilter@410e043b, org.springframework.web.filter.CorsFilter@407ff25f, org.springframework.security.web.authentication.logout.LogoutFilter@3d0ce151, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2bef33e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32eac39b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ef0bc5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ba8fbc8, org.springframework.security.web.session.SessionManagementFilter@4a5c6b30, org.springframework.security.web.access.ExceptionTranslationFilter@cef23a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@726d0482]
+2022-11-08 09:52:58.018 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.020 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/css/**']
+2022-11-08 09:52:58.022 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.024 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/js/**']
+2022-11-08 09:52:58.026 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/img/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.027 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/img/**']
+2022-11-08 09:52:58.028 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/lib/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.030 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/lib/**']
+2022-11-08 09:52:58.031 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/favicon.ico']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.032 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/favicon.ico']
+2022-11-08 09:52:58.033 [main]  WARN o.s.s.c.a.web.builders.WebSecurity.performBuild - You are asking Spring Security to ignore Ant [pattern='/**', OPTIONS]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-11-08 09:52:58.034 [main]  INFO o.s.s.web.DefaultSecurityFilterChain.<init> - Will not secure Ant [pattern='/**', OPTIONS]
+2022-11-08 09:52:59.153 [main]  INFO i.g.c.a.t.C.SelectArtTest.logStarted - Started SelectArtTest in 13.445 seconds (JVM running for 15.608)
+2022-11-08 09:52:59.558 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:52:59.561 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:52:59.565 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 3 ms
+2022-11-08 09:52:59.746 [main] DEBUG i.g.c.a.c.ArticoliController.cercaByBarcode - **** Cerchiamo di ottenere l'articolo attraverso il codice EAN [8008490000021] del barcode ****
+2022-11-08 09:53:00.060 [main]  INFO i.g.c.a.c.ArticoliController.cercaByBarcode - Articolo: ArticoliDto(codArt=002000301, descrizione=ACQUA ULIVETO 15 LT, um=PZ, codStat=, pzCart=6, pesoNetto=1.5, idStatoArt=1, dataCreazione=2010-06-14, prezzo=0.0, barcode=[BarcodeDto(barcode=8008490000021, idTipoArt=CP)], ingredienti=null, famAssort=CategoriaDto(id=1, descrizione=DROGHERIA ALIMENTARE), iva=IvaDto(idIva=22, descrizione=IVA RIVENDITA 22%, aliquota=22))
+2022-11-08 09:53:00.307 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:53:00.308 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:53:00.313 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 3 ms
+2022-11-08 09:53:00.325 [main] DEBUG i.g.c.a.c.ArticoliController.cercaByBarcode - **** Cerchiamo di ottenere l'articolo attraverso il codice EAN [8008490002138] del barcode ****
+2022-11-08 09:53:00.347 [main]  INFO i.g.c.a.c.ArticoliController.cercaByBarcode - Articolo: null
+2022-11-08 09:53:00.364 [main] DEBUG i.g.c.a.e.RestExceptionHandler._handle - Handling it.ghismo.corso1.articoli.exceptions.NotFoundException...
+2022-11-08 09:53:00.433 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:53:00.435 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:53:00.444 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 8 ms
+2022-11-08 09:53:00.458 [main] DEBUG i.g.c.a.c.ArticoliController.cercaByArtCode - **** Cerchiamo di ottenere l'articolo attraverso il codice Articolo [002000301] ****
+2022-11-08 09:53:00.537 [main]  INFO i.g.c.a.c.ArticoliController.cercaByArtCode - Articolo: ArticoliDto(codArt=002000301, descrizione=ACQUA ULIVETO 15 LT, um=PZ, codStat=, pzCart=6, pesoNetto=1.5, idStatoArt=1, dataCreazione=2010-06-14, prezzo=0.0, barcode=[BarcodeDto(barcode=8008490000021, idTipoArt=CP)], ingredienti=null, famAssort=CategoriaDto(id=1, descrizione=DROGHERIA ALIMENTARE), iva=IvaDto(idIva=22, descrizione=IVA RIVENDITA 22%, aliquota=22))
+2022-11-08 09:53:00.638 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:53:00.639 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:53:00.645 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 3 ms
+2022-11-08 09:53:00.651 [main] DEBUG i.g.c.a.c.ArticoliController.cercaByArtCode - **** Cerchiamo di ottenere l'articolo attraverso il codice Articolo [0020003019] ****
+2022-11-08 09:53:00.666 [main]  INFO i.g.c.a.c.ArticoliController.cercaByArtCode - Articolo: null
+2022-11-08 09:53:00.668 [main] DEBUG i.g.c.a.e.RestExceptionHandler._handle - Handling it.ghismo.corso1.articoli.exceptions.NotFoundException...
+2022-11-08 09:53:00.689 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:53:00.699 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:53:00.704 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 2 ms
+2022-11-08 09:53:00.736 [main] DEBUG i.g.c.a.e.RestExceptionHandler.handleConstraintViolationException - Handling ConstraintViolationException...
+2022-11-08 09:53:00.760 [main]  INFO o.s.b.t.m.w.SpringBootMockServletContext.log - Initializing Spring TestDispatcherServlet ''
+2022-11-08 09:53:00.762 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Initializing Servlet ''
+2022-11-08 09:53:00.765 [main]  INFO o.s.t.w.s.TestDispatcherServlet.initServletBean - Completed initialization in 2 ms
+2022-11-08 09:53:00.775 [main] DEBUG i.g.c.a.c.ArticoliController.cercaByDescr - **** Cerchiamo di ottenere l'articolo attraverso la descrizione[ACQUA ULIVETO 15 LT] ****
+2022-11-08 09:53:00.914 [main]  INFO i.g.c.a.c.ArticoliController.cercaByDescr - Articoli: [ArticoliDto(codArt=002000301, descrizione=ACQUA ULIVETO 15 LT, um=PZ, codStat=, pzCart=6, pesoNetto=1.5, idStatoArt=1, dataCreazione=2010-06-14, prezzo=0.0, barcode=[BarcodeDto(barcode=8008490000021, idTipoArt=CP)], ingredienti=null, famAssort=CategoriaDto(id=1, descrizione=DROGHERIA ALIMENTARE), iva=IvaDto(idIva=22, descrizione=IVA RIVENDITA 22%, aliquota=22))]
+2022-11-08 09:53:01.029 [SpringApplicationShutdownHook]  INFO o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-08 09:53:01.063 [SpringApplicationShutdownHook]  INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+2022-11-08 09:53:01.082 [SpringApplicationShutdownHook]  INFO com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.

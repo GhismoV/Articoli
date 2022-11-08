@@ -1,6 +1,7 @@
 package it.ghismo.corso1.articoli.tests.ControllerTests;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.hamcrest.CoreMatchers.startsWith;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -135,8 +136,8 @@ public class InsertArtTest
 				.content(ErrJsonData)
 				.accept(MediaType.APPLICATION_JSON))
 				.andExpect(status().isBadRequest())
-				.andExpect(jsonPath("$.code").value(3))
-				.andExpect(jsonPath("$.message").value("Errore di validazione sul campo [articoli.descrizione] avente valore []"))
+				.andExpect(jsonPath("$[0].code").value(3))
+				.andExpect(jsonPath("$[0].message").value("Errore di validazione sul campo [articoli.descrizione] avente valore []"))
 				.andDo(print());
 	}
 	
